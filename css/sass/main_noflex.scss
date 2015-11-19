@@ -1,0 +1,188 @@
+.body-wrap {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.phone-fix {
+	@media screen and (max-width: $mobile) {
+		top: 0;
+		transform: translateY(0);
+	}
+}
+
+.header {
+	background-color: $primary;
+	height: 80px;
+
+	@media screen and (max-width: $mobile) {
+		height: 64px;
+	}
+
+		&-logo{
+			float: left;
+			margin: $padding-desktop 0 0 $padding-desktop;
+			height: 20px;
+			width: 180px;
+			background-image: url('./../../assets/svg/logo1.svg');
+			background-repeat: no-repeat;
+			@media screen and (max-width: $mobile) {
+				margin: 27px 0 0 $padding-mobile;
+				width: 120px;
+			}
+		}
+
+		&-link{
+			float: right;
+			font-family: akzidenz-grotesk_nextbold;
+			font-size: 12px;
+			color: white;
+			margin: $padding-desktop $padding-desktop 0 0;
+			opacity: 0.5;
+			transition: all 0.2s ease-in-out;
+			@media screen and (max-width: $mobile) {
+				font-size: 10px;
+		    margin: 25px $padding-mobile 0 0;
+			}
+
+			&:hover {
+				opacity: 0.75;
+				transition: all 0.2s ease-in-out;
+			}
+
+			&-active {
+				@extend .header-link;
+				opacity: 1;
+			}
+		}
+
+		&.last {
+			margin-right: $padding-desktop;
+		}
+
+
+
+}
+
+.slogan {
+
+	&-wrap {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 92px;
+		line-height: 86px;
+		max-width: 700px;
+		font-weight: bold;
+		color: white;
+		margin-bottom: $padding-desktop*2;
+		@media screen and (max-width: $tablet) {
+			font-size: 52px;
+			line-height: 52px;
+			max-width: 400px;
+		}
+		@media screen and (max-width: $mobile) {
+			width: 90%;
+			padding: $padding-mobile;
+			margin-bottom: $padding-mobile;
+			font-size: 37px;
+			line-height: 37px;
+		}
+	}
+
+	&-text {
+		font-family: akzidenz-grotesk_nextbold;
+	}
+}
+
+.main {
+
+	&-intro {
+		margin: 0 auto;
+		font-family: akzidenz-grotesk_next_regulRg;
+		max-width: 70%;
+		line-height: 22px;
+		letter-spacing: 1px;
+		text-align: center;
+		font-size: 14px;
+		color: white;
+		margin-bottom: $padding-desktop;
+		@media screen and (max-width: $tablet) {
+			max-width: 90%;
+		}
+		@media screen and (max-width: $mobile) {
+			padding: $padding-mobile;
+			max-width: 90%;
+			font-size: 12px;
+			letter-spacing: 0px;
+			line-height: 16px;
+		}
+
+		.contact {
+			width: 50%;
+		}
+	}
+
+	&-logo {
+		margin: 0 auto;
+		height: 20px;
+		width: 210px;
+		background-image: url('./../../assets/svg/logo-long.svg');
+		background-repeat: no-repeat;
+	}
+
+}
+
+.footer {
+	background-color: $primary;
+	width: 100%;
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
+		@media screen and (max-width: $mobile) {
+			position: absolute;
+			bottom: 0;
+			height: 100px;
+			font-size: 10px;
+		}
+	&-address {
+		float: left;
+		font-family: akzidenz-grotesk_nextbold;
+		height: 80px;
+		width: 40%;
+		text-align: left;
+		margin: $padding-desktop 0 0 $padding-desktop;
+		@media screen and (max-width: $mobile) {
+			margin: $padding-mobile 0 0 $padding-mobile;
+		}
+
+	}
+
+	&-contact{
+		@extend .footer-address;
+		float: right;
+		text-align: right;
+		margin: $padding-desktop $padding-desktop 0 0;
+		@media screen and (max-width: $mobile) {
+			margin: $padding-mobile $padding-mobile 0 0;
+		}
+	}
+
+}
+
+.link{
+	color: white;
+	font-family: akzidenz-grotesk_nextbold;
+	transition: all 0.2s ease-in-out;
+
+		&:hover {
+			transition: all 0.2s ease-in-out;
+			opacity: 0.75;
+		}
+}
+
+.list {
+	font-family: akzidenz-grotesk_nextbold;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}

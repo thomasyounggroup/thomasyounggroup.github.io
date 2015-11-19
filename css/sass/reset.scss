@@ -1,0 +1,50 @@
+
+*, html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  font-family: Helvetica;
+  text-decoration: none;
+  // border: 1px rgba(255,255,0,0.5) solid;
+  font-smoothing: antialiased;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(147,174,203);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: 
+  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+  url('./../../assets/images/background22.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  height: 10%;
+}
+
+main {
+  height: 70%;
+}
+
+footer {
+  height: 20%;
+}
+
+a {
+  &:link {  
+    color: white;
+  }
+  &:visited {
+    color: white;
+  }
+}
+
